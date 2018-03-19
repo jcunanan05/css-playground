@@ -9,11 +9,12 @@ ul {
 ul {
   display: flex;
   /* flex-direction: row; column; row-reverse; column-reverse; */
-  /* flex-wrap: wrap; nowrap; wrap-reverse; row wrap; */
+  flex-wrap: wrap; /* nowrap; wrap-reverse; row wrap; */
   /*justify-content: space-around; flex-end ; center ;
   space-between ; space-around; */
   /* align-items: baseline;  flex-end; center;
   stretch; baseline; */
+  align-content: space-between; /* flex-end ; center ; stretch ; */
 }
 
 li {
