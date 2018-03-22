@@ -18,17 +18,14 @@ ul {
 }
 
 li {
-  width: 100px;
+  /* width: 100px; */
   height: 100px;
   background-color: #8cacea;
   margin: 8px;
   padding: 4px;
 }
 
-li {
-  flex-grow: 1;
-}
 
-.bigger {
-  flex-grow: 5;
+li {
+  flex-basis: 20em; /* auto; px; em; rem; basis for expanding */
 }
