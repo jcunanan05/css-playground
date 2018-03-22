@@ -25,6 +25,10 @@ li {
   padding: 4px;
 }
 
-li:nth-child(2n + 1) {
-  order: 1;
+li {
+  flex-grow: 1;
+}
+
+.bigger {
+  flex-grow: 5;
 }
