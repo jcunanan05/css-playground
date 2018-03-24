@@ -27,5 +27,16 @@ li {
 
 
 li {
-  flex-basis: 20em; /* auto; px; em; rem; basis for expanding */
+  /* flex shorthand GSB grow shrink basis */
+  /* flex: 0 1 auto; default behavior of all items */
+  /* flex: 0 1; basis default to 0  */
+  /* flex: 1 1; absolute flex */
+  /* flex-basis: 200px; relative flex */
+  /* flex: 0 0 auto; same as flex none, popout of the flex container */
+  /* flex: 1 1 auto; same as flex auto */
+  flex: 2 1 0;
+}
+/* flex grow values ratio  */
+li:nth-child(3) {
+  flex: 1 1 0;
 }
