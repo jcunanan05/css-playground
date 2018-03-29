@@ -3,7 +3,6 @@ ul {
   padding: 0;
   list-style: none;
   background: #e8e8e9;
-  height: 300px;
 }
 
 ul {
@@ -12,31 +11,18 @@ ul {
   flex-wrap: wrap; /* nowrap; wrap-reverse; row wrap; */
   /*justify-content: space-around; flex-end ; center ;
   space-between ; space-around; */
-  /* align-items: baseline;  flex-end; center;
-  stretch; baseline; */
-  align-content: space-between; /* flex-end ; center ; stretch ; */
+  align-items: center;
+ /* flex-end ; center ; stretch ; */
+  flex-direction: column;
 }
 
 li {
-  /* width: 100px; */
-  height: 100px;
+  width: 100px;
   background-color: #8cacea;
   margin: 8px;
   padding: 4px;
+  flex-basis: 100px;
 }
 
 
-li {
-  /* flex shorthand GSB grow shrink basis */
-  /* flex: 0 1 auto; default behavior of all items */
-  /* flex: 0 1; basis default to 0  */
-  /* flex: 1 1; absolute flex */
-  /* flex-basis: 200px; relative flex */
-  /* flex: 0 0 auto; same as flex none, popout of the flex container */
-  /* flex: 1 1 auto; same as flex auto */
-  flex: 2 1 0;
-}
-/* flex grow values ratio  */
-li:nth-child(3) {
-  flex: 1 1 0;
-}
+
