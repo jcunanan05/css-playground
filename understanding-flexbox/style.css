@@ -13,26 +13,128 @@ body {
 }
 
 main {
-  flex: 1 0 auto; /*fill the available space*/
-  display: flex; /* flex item became flex container */
+  flex: 1 0 auto;
+  /*fill the available space*/
+  display: flex;
+  /* flex item became flex container */
 }
 
 aside {
-  flex: 0 0 40px; /* stay fixed at 40px */
-  display: flex; /*become a flex container*/
-  flex-direction: column; /* stack horizontally */
-  justify-content: space-around; /*cross asis is now x axis*/
-  align-items: center; /* center main axis, which is now y axis */
-  background-color: #f2f2f2; 
-} 
-
-aside i.fa {
-  /* font-size: 0.9em; */
+  flex: 0 0 40px;
+  /* stay fixed at 40px */
+  display: flex;
+  /*become a flex container*/
+  flex-direction: column;
+  /* stack horizontally */
+  justify-content: space-around;
+  /*cross asis is now x axis*/
+  align-items: center;
+  /* center main axis, which is now y axis */
+  background-color: #f2f2f2;
 }
 
 footer {
   flex: 0 0 90px; /*don’t grow or shrink - just stay at a height of 90px.*/
+  display: flex;
   padding: 10px;
   color: #fff;
   background-color: rgba(61, 100, 158, 0.9);
+}
+
+li {
+  display: flex;
+  /*p will be on one line*/
+  padding: 0 20px;
+  min-height: 50px;
+}
+
+li p {
+  flex: 0 0 25%;
+}
+
+aside i.fa {
+  font-size: 0.9em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  /* fill the available space but shrink when needed */
+}
+
+.catty-music {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 50px;
+}
+
+.music-head {
+  flex: 0 0 280px;
+  display: flex;
+  background-color: #4e4e4e;
+  padding: 40px;
+}
+
+.music-list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catty-music div:nth-child(1) {
+  margin-bottom: auto;
+}
+
+.catty-music div:nth-child(2) {
+  margin-top: 0;
+}
+
+.catty-music div:nth-child(2) i.fa {
+  font-size: 0.9em;
+  padding: 0 0.7em;
+  font-weight: 300;
+}
+
+.catty-music div:nth-child(1) p:first-child {
+  font-size: 1.8em; 
+  margin: 0 0 10px;
+}
+
+.catty-music div:nth-child(1) p:not(:first-child) {
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+
+li span.catty-cloud {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.catty-music-small {
+	display: flex;
+	margin-right: auto;
+}
+
+.catty-music-small img {
+	padding-right: 10px;
+}
+
+.catty-music-controls {
+	display: flex;
+	align-items: center;
+}
+
+.catty-music-controls i.fa{
+	padding: 0 40px;
 }
