@@ -1,0 +1,23 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, .main {
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  background-color: bisque;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  align-content: stretch;
+  background-color: aquamarine;
+}
+
+/* it seems that align-content: stretch isn't supported at chrome yet, but in firefox it is. */
